@@ -16,4 +16,4 @@ Interactive: false
 Name: Run Dev
 Description: Run the `run_dev.R` file in a golem App
 Binding: run_dev
-Interactive: false
+Interactive: true
