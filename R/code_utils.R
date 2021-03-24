@@ -12,7 +12,7 @@ NULL
 
 #' Inverted versions of in, is.null and is.na
 #'
-#' @noRd
+#' @export
 #'
 #' @examples
 #' 1 %not_in% 1:10
@@ -23,15 +23,17 @@ not_na <- Negate(is.na)
 
 #' @title Snake case syntax for is.na and is.null
 #'
-#' @noRd
+#' @export
 is_na <- is.na
 is_null <- is.null
 
 #' Removes the null from a vector
 #'
-#' @noRd
+#' @param x a vector to drop the nulls from
 #'
-#' @example
+#' @export
+#'
+#' @examples
 #' drop_nulls(list(1, NULL, 2))
 drop_nulls <- function(x) {
   x[!sapply(x, is.null)]
@@ -41,7 +43,7 @@ drop_nulls <- function(x) {
 #'
 #' @param x,y Two elements to test, one potentially `NULL`
 #'
-#' @noRd
+#' @export
 #'
 #' @examples
 #' NULL %||% 1
@@ -57,7 +59,7 @@ drop_nulls <- function(x) {
 #'
 #' @param x,y Two elements to test, one potentially `NA`
 #'
-#' @noRd
+#' @export
 #'
 #' @examples
 #' NA %||% 1

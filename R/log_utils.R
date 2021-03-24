@@ -5,7 +5,7 @@
 #' @param display_function_name A logical. If `TRUE`, this will print out the calling function's name in the logging.
 #' @param sys_call A numeric. Used to ensure `sys.call` looks at the right environment. For expert use only.
 #'
-#' @noRd
+#' @export
 console_log <- function(x, log_type = "none", .envir = parent.frame(), sys_call = -1) {
   i <- interactive()
 
@@ -60,7 +60,7 @@ console_log <- function(x, log_type = "none", .envir = parent.frame(), sys_call 
 #'
 #' @inheritParams console_log
 #'
-#' @noRd
+#' @export
 log_info <- function(x, .envir = parent.frame()) {
   console_log(
     x = x,
@@ -76,7 +76,7 @@ log_info <- function(x, .envir = parent.frame()) {
 #'
 #' @inheritParams console_log
 #'
-#' @noRd
+#' @export
 log_warn <- function(x, .envir = parent.frame()) {
   console_log(
     x = x,
@@ -92,7 +92,7 @@ log_warn <- function(x, .envir = parent.frame()) {
 #'
 #' @inheritParams console_log
 #'
-#' @noRd
+#' @export
 log_done <- function(x, .envir = parent.frame()) {
   console_log(
     x = x,
@@ -108,7 +108,7 @@ log_done <- function(x, .envir = parent.frame()) {
 #'
 #' @inheritParams console_log
 #'
-#' @noRd
+#' @export
 log_error <- function(x, .envir = parent.frame()) {
   console_log(
     x = x,
