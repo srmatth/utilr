@@ -38,35 +38,3 @@ is_null <- is.null
 drop_nulls <- function(x) {
   x[!sapply(x, is.null)]
 }
-
-#' If x is `NULL`, return y, otherwise return x
-#'
-#' @param x,y Two elements to test, one potentially `NULL`
-#'
-#' @export
-#'
-#' @examples
-#' NULL %||% 1
-"%||%" <- function(x, y) {
-  if (is.null(x)) {
-    y
-  } else {
-    x
-  }
-}
-
-#' If x is `NA`, return y, otherwise return x
-#'
-#' @param x,y Two elements to test, one potentially `NA`
-#'
-#' @export
-#'
-#' @examples
-#' NA %||% 1
-"%|NA|%" <- function(x, y) {
-  if (is.na(x)) {
-    y
-  } else {
-    x
-  }
-}
