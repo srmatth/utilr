@@ -1,0 +1,19 @@
+Name: Back to Forward Slash
+Description: Change backshlash (\) to forward slash (/) for the item in the users clipboard.
+Binding: back_to_forward
+Interactive: false
+
+Name: Update Package Version
+Description: Update the current package's version and NEWS.md
+Binding: update_version
+Interactive: false
+
+Name: Git Push All
+Description: Push all code up to github
+Binding: git_push_all
+Interactive: false
+
+Name: Run Dev
+Description: Run the `run_dev.R` file in a golem App
+Binding: run_dev
+Interactive: false
