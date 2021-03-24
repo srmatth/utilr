@@ -2,8 +2,6 @@
 
 export("%>%")
 export("%not_in%")
-export("%|NA|%")
-export("%||%")
 export(back_to_forward)
 export(console_log)
 export(drop_nulls)
